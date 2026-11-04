@@ -14,10 +14,19 @@
         }
 
         function resault(){
-    let container = document.getElementById('resultatArea');
-    let Resultat = eval(container.innerHTML);
-    container.innerHTML = Resultat;
-}
+            let container = document.getElementById('resultatArea');
+            let Resultat = eval(container.innerHTML);
+            container.innerHTML = Resultat;
+        }
+
+        function loeschen(){
+            document.getElementById('resultatArea').innerHTML = '';
+        }
+
+        function zurueck(){
+            let container = document.getElementById('resultatArea');
+            container.innerHTML = container.innerHTML.slice(0, -1);
+        }
     </script>
 
     <div id="resultatArea">
@@ -25,6 +34,12 @@
     </div>
 
     <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td onclick="zurueck()">--</td>
+            <td onclick="loeschen()">DEL</td>
+        </tr>
         <tr>
             <td onclick="appendOperation(7)">7</td>
             <td onclick="appendOperation(8)">8</td>
