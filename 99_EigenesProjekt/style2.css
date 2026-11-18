@@ -1,0 +1,48 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+
+    background: linear-gradient(
+        135deg,
+        #15558D,
+        #21649b,
+        #123D68
+    );
+
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.dreieck {
+    width: 100px;
+    height: 100px;
+
+    background-color: black;
+
+    clip-path: polygon(
+        50% 0%,
+        0% 100%,
+        100% 100%
+    );
+
+    position: absolute;
+    bottom: 0;
+
+    transform: translateX(-50%);
+}
+
+#welt {
+    width: 2000px;
+    height: 100vh;
+
+    background: transparent;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
