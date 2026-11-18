@@ -18,7 +18,103 @@ body {
     overflow: hidden;
 }
 
-.dreieck {
+#welt {
+    width: 2000px;
+    height: 100vh;
+
+    background: transparent;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+
+
+#lade-anzeige {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+#lade-container {
+    width: 400px;
+    height: 20px;
+    background: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+}
+
+#ladebalken {
+    width: 0%;
+    height: 100%;
+    background: #00ff66;
+    transition: width 0.05s linear;
+}
+
+#prozent {
+    color: white;
+    font-size: 18px;
+    min-width: 45px;
+    text-align: left;
+}
+
+
+
+
+
+
+
+#player {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(28, 212, 28);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    border-radius: 0px;
+}
+
+.jump {
+    animation: jump 0.8s ease-in-out;
+}
+
+@keyframes jump {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(0px, -300px) rotate(90deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotate(180deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------*/
+
+
+.dreieck01 {
     width: 100px;
     height: 100px;
 
@@ -32,17 +128,215 @@ body {
 
     position: absolute;
     bottom: 0;
+    left: 1200px;
 
     transform: translateX(-50%);
 }
 
-#welt {
-    width: 2000px;
-    height: 100vh;
+.dreieck02 {
+    width: 100px;
+    height: 100px;
 
-    background: transparent;
+    background-color: black;
+
+    clip-path: polygon(
+        50% 0%,
+        0% 100%,
+        100% 100%
+    );
 
     position: absolute;
-    left: 0;
-    top: 0;
+    bottom: 0;
+    left: 1600px;
+
+    transform: translateX(-50%);
+}
+
+.dreieck03 {
+    width: 100px;
+    height: 100px;
+
+    background-color: black;
+
+    clip-path: polygon(
+        50% 0%,
+        0% 100%,
+        100% 100%
+    );
+
+    position: absolute;
+    bottom: 0;
+    left: 1700px;
+
+    transform: translateX(-50%);
+}
+
+.dreieck04 {
+    width: 100px;
+    height: 100px;
+
+    background-color: black;
+
+    clip-path: polygon(
+        50% 0%,
+        0% 100%,
+        100% 100%
+    );
+
+    position: absolute;
+    bottom: 0;
+    left: 2000px;
+
+    transform: translateX(-50%);
+}
+
+.dreieck05 {
+    width: 100px;
+    height: 100px;
+
+    background-color: black;
+
+    clip-path: polygon(
+        50% 0%,
+        0% 100%,
+        100% 100%
+    );
+
+    position: absolute;
+    bottom: 0;
+    left: 2100px;
+
+    transform: translateX(-50%);
+}
+
+
+
+.block01 {
+    width: 100px;
+    height: 100px;
+
+    background-color: black;
+
+    position: absolute;
+    bottom: 0;
+    left: 3000px;
+
+    transform: translateX(-50%);
+}
+.block02 {
+    width: 100px;
+    height: 100px;
+
+    background-color: black;
+
+    position: absolute;
+    bottom: 0;
+    left: 3100px;
+
+    transform: translateX(-50%);
+}
+.block03 {
+    width: 100px;
+    height: 100px;
+
+    background-color: black;
+
+    position: absolute;
+    bottom: 0;
+    left: 3200px;
+
+    transform: translateX(-50%);
+}
+.block04 {
+    width: 100px;
+    height: 100px;
+
+    background-color: black;
+
+    position: absolute;
+    bottom: 0;
+    left: 3300px;
+
+    transform: translateX(-50%);
+}
+.block05 {
+    width: 100px;
+    height: 100px;
+
+    background-color: black;
+
+    position: absolute;
+    bottom: 0;
+    left: 3400px;
+
+    transform: translateX(-50%);
+}
+.block06 {
+    width: 100px;
+    height: 100px;
+
+    background-color: black;
+
+    position: absolute;
+    bottom: 0;
+    left: 3500px;
+
+    transform: translateX(-50%);
+}
+
+
+
+.dreieck06 {
+    width: 100px;
+    height: 100px;
+
+    background-color: black;
+
+    clip-path: polygon(
+        50% 0%,
+        0% 100%,
+        100% 100%
+    );
+
+    position: absolute;
+    bottom: 0;
+    left: 4000px;
+
+    transform: translateX(-50%);
+}
+.dreieck07 {
+    width: 100px;
+    height: 100px;
+
+    background-color: black;
+
+    clip-path: polygon(
+        50% 0%,
+        0% 100%,
+        100% 100%
+    );
+
+    position: absolute;
+    bottom: 0;
+    left: 4100px;
+
+    transform: translateX(-50%);
+}
+.dreieck08 {
+    width: 100px;
+    height: 100px;
+
+    background-color: black;
+
+    clip-path: polygon(
+        50% 0%,
+        0% 100%,
+        100% 100%
+    );
+
+    position: absolute;
+    bottom: 0;
+    left: 4200px;
+
+    transform: translateX(-50%);
 }
